@@ -387,7 +387,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; 
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -445,7 +445,7 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
 }
 
 /* rtl:raw:
@@ -466,7 +466,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+ /* -webkit-appearance: button; */
 }
 
 output {
@@ -3816,9 +3816,13 @@ textarea.form-control-lg {
   color: var(--bs-navbar-active-color);
 }
 
-.nav-brand h1 {
-  font-family: var(--gol-primary-vibes);
-  letter-spacing: 10px;
+.nav-brand {
+  font-family: var(--gol-primary-la);
+  letter-spacing: 5px;
+  text-transform: none;
+  font-size: 3.0rem;
+  
+
 }
 .navbar-collapse {
   flex-basis: 100%;
@@ -10914,7 +10918,8 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fe4042;
+  color: #352527;
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -10922,7 +10927,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: #d1c6c6b0;
+    background-color: #d1c6c680;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
